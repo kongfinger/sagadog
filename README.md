@@ -1,4 +1,4 @@
-# sagadog-
+# sagadog
 Stock market index analysis
 
 using the python yahoofinancials lib at: https://pypi.org/project/yahoofinancials/
