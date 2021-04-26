@@ -50,3 +50,32 @@ for x in e:
         f=r[u[0]]
         try:
                 h=f[0]
+                        except:
+                continue
+        j=h.keys()
+        k=h[j[0]]
+        l=k['totalAssets']
+        c=yf.get_ebit()
+        uo=uo+x+','+str(c)+','+str(l)+'\n'
+        #bb=bb+uo
+#       i.write(bb)
+#       i.close()
+        s = []
+        s.append(x)
+        s.append(c)
+        s.append(l)
+        sto.append(s)
+        print x,c,l,'\n'
+#       except:
+#       continue
+print sto
+print rund(sto)
+h=rund(sto)
+b=h.keys()
+b.sort()
+for x in b:
+        print x,h[x]
+print len(b)
+o=open('nasdog','w')
+o.write(uo)
+o.close()
